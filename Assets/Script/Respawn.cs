@@ -5,11 +5,17 @@ using UnityEngine;
 public class Respawn : MonoBehaviour
 {
     // Start is called before the first frame update
-    Vector3 spawn; 
-
-    void Start()
+    Vector3 spawn;
+    
+    
+    private void OnTriggerEnter(Collider other)
     {
-        spawn = transform.position;
+    if(other.gameObject.tag == "Respawn")
+        {
+            spawn = transform.position;
+        }
+     
+       
     }
 
     // Update is called once per frame
