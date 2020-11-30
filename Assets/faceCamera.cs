@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class faceCamera : MonoBehaviour
 {
-    void update()
+    void Update()
     {
         transform.LookAt(Camera.main.transform);
     }
